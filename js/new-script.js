@@ -1,24 +1,40 @@
 'use strict';
 
+
+
+
+
+///////////////////////////
+// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+///////////////////////////
+
+
+
+
+
 let level = 1;
 let timeToDuel = Math.floor(Math.random() * 1000) + 100;
 timeToDuel = 700;
 let readyToDuel = 'false';
 let time;
 let score;
-let startButton = document.querySelector('.button-start-game');
-let restartButton = document.querySelector('.button-restart');
-let nextButton = document.querySelector('.button-next-level');
-let gameMenu = document.querySelector('.game-menu');
-let wrapper = document.querySelector('.wrapper');
-let gamePanels = document.querySelector('.game-panels');
-let gameScreen = document.querySelector('.game-screen');
-let winScreen = document.querySelector('.win-screen');
-let gunman = document.querySelector('.gunman');
-let timeYou = document.querySelector('.time-panel__you'); 
-let timeGunman = document.querySelector('.time-panel__gunman'); 
-let showLevel = document.querySelector('.score-panel__level'); 
-let message = document.querySelector('.message');
+const startButton = document.querySelector('.button-start-game');
+const restartButton = document.querySelector('.button-restart');
+const nextButton = document.querySelector('.button-next-level');
+const gameMenu = document.querySelector('.game-menu');
+const wrapper = document.querySelector('.wrapper');
+const gamePanels = document.querySelector('.game-panels');
+const gameScreen = document.querySelector('.game-screen');
+const winScreen = document.querySelector('.win-screen');
+const gunman = document.querySelector('.gunman');
+const timeYou = document.querySelector('.time-panel__you'); 
+const timeGunman = document.querySelector('.time-panel__gunman'); 
+const showLevel = document.querySelector('.score-panel__level'); 
+const message = document.querySelector('.message');
 let sfxIntro = new Audio('sfx/intro.m4a');
 let sfxWait = new Audio('sfx/wait.m4a');
 let sfxFire = new Audio('sfx/fire.m4a');
