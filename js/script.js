@@ -19,7 +19,7 @@ const gunmanStyles = window.getComputedStyle(gunman);
 const timeValues = [1500, 1300, 1000, 700, 400];
 let playerCounter = 0;
 let timerInterval = null;
-let currentLevel = 3;
+let currentLevel = 1;
 
 const levelEnemies = [
     'gunman-level-1',
@@ -253,7 +253,7 @@ function playerShootsGunman() {
     else {
         console.log(gunmanStyles.getPropertyValue('left'));
         foul.play();
-        
+        gunman.classList.add('moving-reverse');
         buttonRestartGame.style.display = 'block';
         gameActive = false;
     }
